@@ -13,3 +13,7 @@ python build_dataset.py triage
 
 ### 4) Execute notebooks with a runtime budget (8 min per nb by default)
 python build_dataset.py run   --per-notebook-seconds 480   --max-total-seconds 7200
+
+### 5) After execution notebook_dataset.csv this is the reports of all the repo that could run, either with error or not. 
+
+### 6) The newly ran notebooks are in artifacts/nb_runs
