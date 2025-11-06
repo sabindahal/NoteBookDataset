@@ -40,7 +40,7 @@ def ensure_repo_env(repo_url: str, repo_dir: pathlib.Path,
                     extra_pkgs: Optional[List[str]] = None,
                     base_pkgs: Optional[List[str]] = None) -> pathlib.Path:
     extra_pkgs = extra_pkgs or []
-    base_pkgs = base_pkgs or ["pip", "wheel", "setuptools", "papermill", "nbclient", "ipykernel", "jupyter"]
+    base_pkgs = base_pkgs or ["pip", "wheel", "setuptools","numpy", "pandas", "matplotlib", "scikit-learn","papermill", "nbclient", "ipykernel", "jupyter"]
 
     fp = _reqs_fingerprint(repo_dir)
     key = _slug(repo_url.split("github.com/")[-1]) + "-" + fp
@@ -82,3 +82,4 @@ def prune_envs(older_than_days: int = 14):
             t = d.stat().st_mtime
         if t < cutoff:
             shutil.rmtree(d, ignore_errors=True)
+
