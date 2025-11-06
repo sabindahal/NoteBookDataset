@@ -1,0 +1,20 @@
+repo_url,repo_stars,repo_pushed_at,notebook_path,notebook_url,size_kb,n_cells,libs_detected,has_relative_data_paths,missing_paths,suspect_cuda,has_heavy_libs,keep_candidate,runtime_seconds,status,error_type,error_message
+https://github.com/microsoft/ML-For-Beginners,78647,2025-10-24T10:20:03Z,2-Regression/1-Tools/solution/R/lesson_1-R.ipynb,https://github.com/microsoft/ML-For-Beginners/blob/main/2-Regression/1-Tools/solution/R/lesson_1-R.ipynb,16,10,,False,,False,False,True,3,error,ExecutionError,"ments/runnable_notebooks_dataset/work/envs/microsoft-ML-For-Beginners-no-reqs/lib/python3.12/site-packages/click/decorators.py"", line 34, in new_func
+    return f(get_current_context(), *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/Users/sabin/Documents/runnable_notebooks_dataset/work/envs/microsoft-ML-For-Beginners-no-reqs/lib/python3.12/site-packages/papermill/cli.py"", line 235, in papermill
+    execute_notebook(
+  File ""/Users/sabin/Documents/runnable_notebooks_dataset/work/envs/microsoft-ML-For-Beginners-no-reqs/lib/python3.12/site-packages/papermill/execute.py"", line 131, in execute_notebook
+    raise_for_execution_errors(nb, output_path)
+  File ""/Users/sabin/Documents/runnable_notebooks_dataset/work/envs/microsoft-ML-For-Beginners-no-reqs/lib/python3.12/site-packages/papermill/execute.py"", line 251, in raise_for_execution_errors
+    raise error
+papermill.exceptions.PapermillExecutionError: 
+---------------------------------------------------------------------------
+Exception encountered at ""In [1]"":
+  Cell In[1], line 1
+    suppressWarnings(if(!require(""pacman"")) install.packages(""pacman""))
+                     ^
+SyntaxError: invalid syntax
+
+
+"

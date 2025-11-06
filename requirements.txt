@@ -1,0 +1,12 @@
+requests>=2.31
+PyYAML>=6
+nbformat>=5.9
+papermill>=2.5
+nbclient>=0.10
+ipykernel>=6.29
+jupyter>=1.0
+tqdm>=4.66
+pandas>=2.2
+gitpython>=3.1
+ruamel.yaml>=0.18
+packaging>=24.0
